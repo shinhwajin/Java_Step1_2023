@@ -21,5 +21,4 @@ public class CharacterEx3 {
 		System.out.println((char)a2);  //명시적 형변환(ASCII 코드)
 		
 	}
-
 }

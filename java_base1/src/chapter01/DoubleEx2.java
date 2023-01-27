@@ -12,5 +12,4 @@ public class DoubleEx2 {
 		System.out.println("aVal + bVal : "+ (aVal+bVal));
 		
 	}
-
 }

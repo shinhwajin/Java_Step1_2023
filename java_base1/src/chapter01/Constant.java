@@ -14,7 +14,6 @@ public class Constant {
 		System.out.println(MAX_NUM);
 		System.out.println(MIN_NUM);
 		System.out.println(PI);
-
+	
 	}
-
 }
