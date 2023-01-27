@@ -24,6 +24,19 @@ public class BaseballGame {
 			com3 = new Random().nextInt(9) + 1;
 		} while (com1 == com2 || com1 == com3 || com2 == com3);
 
+		
+/*		outer: for(int i=0;i<3;) {
+			num[i]=new Random().nextInt(9)+1;
+			//중복값 제거하는 반복문
+			for(int j=0;j<i;j++) {
+				if(num[j]==num[i]) {
+					continue outer;  //outer for , continue outer: outer로 돌아가서 다시 실행
+				}                    //            break outer: for문 탈출
+			}//for
+			i++;  //중복되면 i다시, 중복안되면 다음 i
+		}//for
+*/		
+		
 		// 컴퓨터 준비 완료
 
 		// 사용자가 입력할 수

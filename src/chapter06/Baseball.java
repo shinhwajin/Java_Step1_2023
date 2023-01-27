@@ -19,7 +19,7 @@ public class Baseball {
 			com1 = new Random().nextInt(9) + 1;
 			com2 = new Random().nextInt(9) + 1;
 			com3 = new Random().nextInt(9) + 1;
-		} while (com1 == com2 || com1 == com3 || com2 == com3);
+		} while (com1 == com2 || com1 == com3 || com2 == com3);  // 같은게 하나라도 있으면 다시
 
 		// 컴퓨터 준비 완료
 

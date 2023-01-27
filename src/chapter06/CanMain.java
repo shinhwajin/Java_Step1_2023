@@ -6,7 +6,7 @@ public class CanMain {
 
 	public static void main(String[] args) {
 
-		Vending ven=new Vending();
+		CanVending ven=new CanVending();
 		ven.init();  //음료준비
 		
 		Scanner scan=new Scanner(System.in);

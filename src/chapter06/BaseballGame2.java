@@ -6,52 +6,51 @@ import java.util.Scanner;
 public class BaseballGame2 {
 	//멤버변수
 	private int[] num=new int[3];
-	private String result;
+	private String com;
 	
 	Scanner scan = new Scanner(System.in);
 	
 	//생성자
 	public BaseballGame2() {
-		int[] numberPool=new int[9];
-		outer: for(int i=0;i<3;) {
-			num[i]=new Random().nextInt(9)+1;
-			//중복값 제거하는 반복문
-			for(int j=0;j<i;j++) {
-				if(num[j]==num[i]) {
-					continue outer;
-				}
-			}//for
-			i++;
-		}
+
+		do {
+			com = "";
+			for(int i=0; i<3; i++) {
+				com += (char)(new Random().nextInt(9) + 49); //아스키코드 '1' ~ '9' 사이의 수 랜덤
+			}
+		}while(com.charAt(0) == com.charAt(1) || com.charAt(1) == com.charAt(2) || com.charAt(2) == com.charAt(0));
+		
+		System.out.println("정답 : " + com);
 	}
 	
+	
 	public String check() {
-		result="OUT";
-		int[] myNum= new int[3];
-		int strike=0;
-		int ball=0;
+		Scanner scan = new Scanner(System.in);
+		String result = "LOSE";
 		
-		System.out.println();
-		System.out.println("1 ~ 9 사이의 수를 입력하세요");
-		String[] numStr= {"첫","두","세"};
-		for(int i=0;i<3;i++) {
-			do {
-				System.out.print(numStr[i]+"번째 수를 입력하세요 > ");
-				myNum[i]=scan.nextInt();
-				if(myNum[i]>9||myNum[i]<1) {
-					System.out.println("1 ~ 9 사이의 수를 입력하세요");
-
+		System.out.print("세자리 수를 입력하세요 : ");
+		String user = scan.next();
+		int strike=0, ball=0;
+		
+		outer : for(int i=0; i<3; i++) {
+			for(int j=0; j<3; j++) {
+				if(num[i] == user.charAt(j)) {
+					if(i == j) { // 같으면 스트라이크가 증가하고 더이상 해당 자리수는 세지 않는다.
+						 strike++;
+						 continue outer;
+					}
+					else{ // 자리수가 다를경우는 볼을 증가
+						ball++;
+					}
 				}
-			} while(myNum[i]>9||myNum[i]<1);
+			}
 		}
-		if(strike==3) {
-			result="WIN";
-		} else if(strike+ball!=0) {
-			System.out.println(strike + "Strike " + ball + "Ball!!");
-		} else {
-			System.out.println("OUT!!");
-			System.out.println("===============================");
+		
+		System.out.println(strike + " strike, " + ball + " ball ");
+		if(strike == 3) {
+			result = "WIN";
 		}
+		
 		return result;
 	}
 		

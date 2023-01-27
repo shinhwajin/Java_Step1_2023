@@ -10,7 +10,6 @@ public class Student {
 
 	//디폴트 생성자(free compile) -기본 / 이거 쓸거면 생략하면 안됨
 	//오버로딩된 생성자가 있을 시 디폴트를 사용하기 위해서는 반드시 명시한다.(생략 불가능)
-	
 	public Student() {
 		// TODO Auto-generated constructor stub
 	}

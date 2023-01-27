@@ -19,6 +19,7 @@ public class FunTest08 {
 			result=a*Recur(a-1);       //a=5, a=4로 돌린거 곱함 / a=4, a=3로 돌린거 곱함 / => 5*4*3*2 , 1일때 return(1)로 오류없이 끝남
 		}
 		
+		//통상적 표기
 		//return (1);  //정상종료는 아니지만 오류없이 끝남
 		//return 0;  //정상종료되었지만 넘어값?이 없음
 		return result;
