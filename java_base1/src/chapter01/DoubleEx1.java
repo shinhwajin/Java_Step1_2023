@@ -14,5 +14,4 @@ public class DoubleEx1 {
 		System.out.println(dnum);
 		
 	}
-
 }

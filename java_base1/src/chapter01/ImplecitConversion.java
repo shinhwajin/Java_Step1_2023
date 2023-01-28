@@ -21,5 +21,4 @@ public class ImplecitConversion {
 		System.out.println(fNum);
 
 	}
-
 }

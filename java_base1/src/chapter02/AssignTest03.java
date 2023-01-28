@@ -15,5 +15,4 @@ public class AssignTest03 {
 		System.out.println(num2);
 		
 	}
-
 }

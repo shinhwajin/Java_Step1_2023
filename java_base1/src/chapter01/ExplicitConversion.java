@@ -22,5 +22,4 @@ public class ExplicitConversion {
 		System.out.println(iNum3);  //1.2 => 1 / 0.9 => 0 / 1+0=1
 		
 	}
-
 }

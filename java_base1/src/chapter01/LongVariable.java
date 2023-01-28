@@ -15,5 +15,4 @@ public class LongVariable {
 		System.out.println(num2+num3);  // 결과값 : long
 		System.out.println(level);
 	}
-
 }

@@ -15,5 +15,6 @@ public class Constant {
 		System.out.println(MIN_NUM);
 		System.out.println(PI);
 	
+
 	}
 }

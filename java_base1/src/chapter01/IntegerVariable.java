@@ -13,5 +13,4 @@ public class IntegerVariable {
 		System.out.println("두수의 합 : "+ (sVal + bVal));
 		
 	}
-
 }

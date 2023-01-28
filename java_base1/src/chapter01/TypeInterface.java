@@ -14,5 +14,4 @@ public class TypeInterface {
 		System.out.println(str);
 		
 	}
-
 }

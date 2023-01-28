@@ -15,5 +15,4 @@ public class BinaryTest1 {
 		System.out.println("long 타입 : " + dVar);
 
 	}
-
 }
