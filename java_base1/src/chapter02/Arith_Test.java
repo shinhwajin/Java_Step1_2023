@@ -28,5 +28,6 @@ public class Arith_Test {
 		//평균
 		double avScore2 = totScore2/2;
 		System.out.println("평균 : "+avScore2);
+
 	}
 }

@@ -24,6 +24,5 @@ public class AssignTest04 {
 		System.out.println(lastScore4);  //151
 		System.out.println(gameScore);  //150
 
-
 	}
 }
