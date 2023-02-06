@@ -19,6 +19,7 @@ public class CharacterEx3 {
 		int a2=97;
 		System.out.println(a2);
 		System.out.println((char)a2);  //명시적 형변환(ASCII 코드)
+
 		
 	}
 }

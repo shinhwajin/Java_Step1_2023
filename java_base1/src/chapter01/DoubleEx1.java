@@ -12,6 +12,7 @@ public class DoubleEx1 {
 		
 		System.out.println(fnum);
 		System.out.println(dnum);
+
 		
 	}
 }
